@@ -3,16 +3,8 @@
 body {
   width: 100h;
   height: 100vh;
-  background-image: linear-gradient(
-    20deg,
-    rgb(185, 185, 255),
-    rgb(249, 241, 241),
-    rgb(241, 249, 241)
-  );
-  font-family: "Poppins";
-  max-width: 1700px;
+  background-color: rgb(241, 249, 241);
   width: 100%;
-  margin: 0 auto;
 }
 
 #header {
@@ -29,7 +21,8 @@ body {
 }
 
 #header > a {
-  background-color: #e7e6e4;
+  background-color: #e7e6e47e;
+  backdrop-filter: blur(10px);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -41,11 +34,13 @@ body {
   display: flex;
 }
 #nav ul li {
-  background-color: #e7e6e4;
+  background-color: #e7e6e477;
+  backdrop-filter: blur(10px);
   margin: 2px;
 }
 #nav ul li.active {
-  background-color: #000;
+  background-color: #0000008a;
+  backdrop-filter: blur(10px);
   color: #e7e6e4;
 }
 #nav ul li a {
@@ -62,6 +57,13 @@ body {
   padding: 70px 20px;
   display: flex;
   flex-wrap: wrap;
+  background-image: linear-gradient(
+    20deg,
+    rgb(185, 185, 255),
+    rgb(249, 241, 241),
+    rgb(241, 249, 241)
+  );
+  background-size: cover;
 }
 
 #main #aside {
@@ -157,8 +159,6 @@ body {
   content: "";
   width: 20px;
   height: 20px;
-  background-image: url(../img/arrow.svg);
-  background-size: cover;
   position: absolute;
   left: 0;
   top: 0;
@@ -180,7 +180,7 @@ body {
   display: flex;
 }
 #contents h2 > span:nth-child(1) {
-  width: 95px;
+  width: 125px;
 }
 
 .line > span {
@@ -203,17 +203,19 @@ body {
   display: flex;
   padding: 10px 0 6px;
   border-bottom: 1px solid #aaa;
+  cursor: pointer;
 }
-#contents .list .date {
+#contents .list .calories {
   margin-right: 20px;
   position: relative;
   padding-left: 16px;
   font-size: 12px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: st;
+  width: 100px;
 }
-#contents .list .date::before {
+#contents .list .calories::before {
   content: "";
   width: 7px;
   height: 7px;
@@ -223,6 +225,7 @@ body {
   left: 0px;
   top: 10px;
 }
-#contents .list .title {
-  font-size: 20px;
+#contents .list .productName {
+  font-size: 18px;
+  font-family: 'NanumSquareNeo';
 }

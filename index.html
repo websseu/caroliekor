@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
+    <link rel="stylesheet" href="https://websseu.github.io/fontkor/fontkor.css" />
     <link rel="stylesheet" href="assets/css/reset.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
@@ -14,7 +15,7 @@
       <nav id="nav">
         <ul>
           <li class="active"><a href="/">[B] BLOG</a></li>
-          <li><a href="/">[D] DOCS</a></li>
+          <li><a href="/">[D] DOCS</a></li> 
           <li><a href="/">[Y] YOUTUBE</a></li>
           <li><a href="/">[G] GITHUB</a></li>
         </ul>
@@ -127,74 +128,44 @@
             <span>DATE</span>
             <span>NAME</span>
           </h2>
-          <ul>
-            <li class="list">
-              <span class="date">140 kacl</span>
-              <span class="title">바리스타룰스 - 로어슈거 에스프레소 라떼</span>
-            </li>
-            <li class="list">
-              <span class="date">170 kacl</span>
-              <span class="title">바리스타룰스 - 모카프레스</span>
-            </li>
-            <li class="list">
-              <span class="date">161 kacl</span>
-              <span class="title">바리스타률스 - 카라멜 딥 프레소</span>
-            </li>
-            <li class="list">
-              <span class="date">162 kacl</span>
-              <span class="title">바리스타률스 - 에스프레소 라떼</span>
-            </li>
-            <li class="list">
-              <span class="date">10 kacl</span>
-              <span class="title">바리스타률스 - 콜드브루 블랙</span>
-            </li>
-            <li class="list">
-              <span class="date">210 kacl</span>
-              <span class="title">바리스타률스 - 바닐라빈 라떼</span>
-            </li>
-            <li class="list">
-              <span class="date">220 kacl</span>
-              <span class="title">바리스타률스 - 돌체 라떼</span>
-            </li>
-            <li class="list">
-              <span class="date">257 kacl</span>
-              <span class="title">스타벅스 바닐라 라떼</span>
-            </li>
-            <li class="list">
-              <span class="date">160 kacl</span>
-              <span class="title">스타벅스 카페 라떼</span>
-            </li>
-            <li class="list">
-              <span class="date">165 kacl</span>
-              <span class="title">강릉 커피 바닐라 라떼</span>
-            </li>
-            <li class="list">
-              <span class="date">140 kacl</span>
-              <span class="title">강릉 커피 라떼</span>
-            </li>
-            <li class="list">
-              <span class="date">170 kacl</span>
-              <span class="title">스페셜티 카페라떼 모카</span>
-            </li>
-            <li class="list">
-              <span class="date">150 kacl</span>
-              <span class="title">스페셜티 카페라떼 마일드</span>
-            </li>
-            <li class="list">
-              <span class="date">225 kacl</span>
-              <span class="title">다방커피 오리지널</span>
-            </li>
-            <li class="list">
-              <span class="date">149 kacl</span>
-              <span class="title">오늘의 커피 바닐라 라떼</span>
-            </li>
-            <li class="list">
-              <span class="date">175 kacl</span>
-              <span class="title">할리스 카페 라떼</span>
-            </li>
+          <ul id="coffee-list">
+
+            <!-- 
+              <li class="list">
+                <span class="date">140 kacl</span>
+                <span class="title">강릉 커피 라떼</span>
+              </li> 
+            -->
           </ul>
         </div>
       </section>
     </main>
+
+
+    <script>
+      const jsonUrl = "https://websseu.github.io/jsonkor/carolies/carolie_coffee.json"; 
+    
+      fetch(jsonUrl)
+        .then((response) => response.json()) 
+        .then((data) => {
+          console.log(data);
+    
+          const coffeeList = document.getElementById("coffee-list");
+    
+          data.forEach((coffee) => {
+            const listItem = document.createElement("li");
+            listItem.classList.add("list");
+            listItem.innerHTML = `
+              <span class="calories">${coffee.calories} kacl</span>
+              <span class="productName">${coffee.productName}</span>
+            `;
+            coffeeList.appendChild(listItem);
+          });
+        })
+        .catch((error) => {
+          console.error("JSON 파일을 가져오지 못했습니다. : ", error);
+        });
+    </script>
+    
   </body>
 </html>
