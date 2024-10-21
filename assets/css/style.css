@@ -6,7 +6,6 @@ body {
   background-color: rgb(241, 249, 241);
   width: 100%;
 }
-
 #header {
   position: fixed;
   left: 50%;
@@ -19,17 +18,15 @@ body {
   max-width: 1700px;
   padding: 0 20px;
 }
-
 #header > a {
-  background-color: #e7e6e47e;
-  backdrop-filter: blur(10px);
+  background-color: #000;
+  color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 0 8px;
   font-family: "Poppins";
 }
-
 #nav ul {
   display: flex;
 }
@@ -52,7 +49,6 @@ body {
   justify-content: center;
   padding: 2px 5px;
 }
-
 #main {
   padding: 70px 20px;
   display: flex;
@@ -171,6 +167,18 @@ body {
 #aside .view .mid img {
   filter: grayscale(100%);
 }
+#aside .view .mid img:hover {
+  filter: grayscale(0);
+}
+
+#coffee-image {
+  transition: opacity 0.5s linear;
+  opacity: 1;
+}
+
+#coffee-image.fade-out {
+  opacity: 0.5;
+}
 
 #contents h2 {
   font-size: 12px;
@@ -199,13 +207,21 @@ body {
   transform: rotate(15deg);
 }
 
-#contents .list {
+#coffee-list .list {
   display: flex;
-  padding: 10px 0 6px;
+  align-items: end;
+  padding: 10px 0;
   border-bottom: 1px solid #aaa;
   cursor: pointer;
+  
 }
-#contents .list .calories {
+#coffee-list .list:hover {
+  background-color: rgba(208, 208, 255, 0.516);
+}
+#coffee-list .list:hover .calories::before {
+  background-color: rgb(51, 51, 255);
+}
+#coffee-list .list .calories {
   margin-right: 20px;
   position: relative;
   padding-left: 16px;
@@ -215,7 +231,7 @@ body {
   justify-content: st;
   width: 100px;
 }
-#contents .list .calories::before {
+#coffee-list .list .calories::before {
   content: "";
   width: 7px;
   height: 7px;
@@ -225,7 +241,38 @@ body {
   left: 0px;
   top: 10px;
 }
-#contents .list .productName {
+#coffee-list .list .productName {
   font-size: 18px;
   font-family: 'NanumSquareNeo';
+  width: 350px
+}
+#coffee-list .list .nutrition {
+  display: flex;
+  gap: 10px;
+}
+#coffee-list .list .nutrition span {
+  position: relative;
+  font-size: 10px;
+  color: #636363;
+  margin-bottom: -3px;
+}
+#coffee-list .list .nutrition span::before {
+  position: absolute;
+  left: 0;
+  top: -15px;
+}
+#coffee-list .list .nutrition .sodium::before {
+  content: '나트륨';
+}
+#coffee-list .list .nutrition .carbohydrates::before {
+  content: '탄수화물';
+}
+#coffee-list .list .nutrition .sugar::before {
+  content: '설탕';
+}
+#coffee-list .list .nutrition .fat::before {
+  content: '지방';
+}
+#coffee-list .list .nutrition .transFat::before {
+  content: '트랜스지방';
 }

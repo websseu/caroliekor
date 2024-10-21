@@ -3,27 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>kacl</title>
 
+    <link rel="icon" href="assets/img/favicon.png" type="image/png" />
     <link rel="stylesheet" href="https://websseu.github.io/fontkor/fontkor.css" />
     <link rel="stylesheet" href="assets/css/reset.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
     <header id="header">
-      <a href="/"><span>carolies</span></a>
-      <nav id="nav">
+      <a href="/"><span>kacl</span></a>
+      <!-- <nav id="nav">
         <ul>
           <li class="active"><a href="/">[B] BLOG</a></li>
           <li><a href="/">[D] DOCS</a></li> 
           <li><a href="/">[Y] YOUTUBE</a></li>
           <li><a href="/">[G] GITHUB</a></li>
         </ul>
-      </nav>
+      </nav> -->
     </header>
 
     <main id="main">
-      <h1>Blog</h1>
+      <h1>Coffee</h1>
 
       <aside id="aside">
         <h2 class="line"><span>FILTERS</span></h2>
@@ -115,8 +116,8 @@
           <div class="top">
             <span>[ VIEW. 12 ]</span>
           </div>
-          <div class="mid">
-            <img src="assets/img/nemo01.jpg" alt="ss" />
+          <div class="mid" >
+            <img id="coffee-image" src="https://websseu.github.io/jsonkor/carolies/carolie_img/coffee_001_01.jpg" alt="커피 이미지" />
           </div>
           <div></div>
         </div>
@@ -125,17 +126,11 @@
       <section id="contents">
         <div>
           <h2 class="line">
-            <span>DATE</span>
+            <span>KCAL</span>
             <span>NAME</span>
           </h2>
           <ul id="coffee-list">
 
-            <!-- 
-              <li class="list">
-                <span class="date">140 kacl</span>
-                <span class="title">강릉 커피 라떼</span>
-              </li> 
-            -->
           </ul>
         </div>
       </section>
@@ -144,21 +139,29 @@
 
     <script>
       const jsonUrl = "https://websseu.github.io/jsonkor/carolies/carolie_coffee.json"; 
-    
+      const baseImageUrl = "https://websseu.github.io/jsonkor/carolies/carolie_img/";
+      const coffeeImage = document.getElementById("coffee-image");
+
       fetch(jsonUrl)
         .then((response) => response.json()) 
         .then((data) => {
-          console.log(data);
-    
           const coffeeList = document.getElementById("coffee-list");
-    
+
           data.forEach((coffee) => {
             const listItem = document.createElement("li");
             listItem.classList.add("list");
             listItem.innerHTML = `
-              <span class="calories">${coffee.calories} kacl</span>
+              <span class="calories">${coffee.calories} kcal</span>
               <span class="productName">${coffee.productName}</span>
             `;
+
+            // 마우스 오버 이벤트: 이미지 파일명만 변경
+            listItem.addEventListener("mouseover", () => {
+              const newImageUrl = baseImageUrl + coffee.image + ".jpg";  // JSON에 있는 imageName 사용
+              console.log(newImageUrl)
+              coffeeImage.src = newImageUrl;
+            });
+
             coffeeList.appendChild(listItem);
           });
         })
