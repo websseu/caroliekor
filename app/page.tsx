@@ -31,7 +31,7 @@ export default function Home() {
             </span>
           </h2>
           <div className="filter">
-            <button className="flex items-center gap-2 mt-2 mb-2">
+            <button className="flex items-center gap-2 mt-3 mb-2">
               <MdOutlineKeyboardArrowDown className="text-gray-600" />
               <span className="text-sm text-gray-700">Topic</span>
             </button>
@@ -62,11 +62,11 @@ export default function Home() {
             </span>
           </h2>
           <div className="kcal-list">
-            <ul className="flex flex-col">
+            <ul className="flex flex-col mt-4">
               {data.map((item, index) => (
-                <li key={index} className="flex justify-between py-2 text-sm">
-                  <span>{item.calories} kcal</span>
-                  <span>{item.productName}</span>
+                <li key={index} className="flex py-1 text-sm cursor-pointer">
+                  <span className="w-[100px]">{item.calories} kcal</span>
+                  <span className="text-gray-700">{item.productName}</span>
                 </li>
               ))}
             </ul>
