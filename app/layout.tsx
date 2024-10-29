@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/Header";
+import { Analytics } from "@vercel/analytics/react";
 
 export const metadata: Metadata = {
   title: "칼로리 정보 허브",
@@ -38,6 +39,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        <Analytics />
         <Header />
         {children}
       </body>
