@@ -1,0 +1,222 @@
+[
+  {
+    "company": "매일유업",
+    "foodType": "커피",
+    "productName": "바리스타룰스 로어슈거 에스프레소 라떼",
+    "totalVolume": "250mL",
+    "calories": 140,
+    "image": ["coffee_001_01"],
+    "nutritionFacts": {
+      "sodium": "130mg (7%)",
+      "carbohydrates": "17g (5%)",
+      "sugar": "13g (13%)",
+      "lactose": "0g",
+      "fat": "3.9g (7%)",
+      "transFat": "0g",
+      "saturatedFat": "3.9g (26%)",
+      "cholesterol": "20mg (7%)",
+      "protein": "5g (9%)"
+    },
+    "ingredients": [
+      "국산 원유",
+      "케냐AA 블렌드 에스프레소 커피 추출액",
+      "브라질산 35%",
+      "에티오피아산 31%",
+      "케냐산 5%",
+      "정제수",
+      "설탕",
+      "콜롬비아커피추출액 (콜롬비아산)",
+      "향료 3종",
+      "스모크향",
+      "탄산수소 나트륨",
+      "유화제",
+      "락타아제"
+    ]
+  },
+  {
+    "company": "매일유업",
+    "foodType": "커피",
+    "productName": "바리스타룰스 모카프레스",
+    "totalVolume": "270mL",
+    "calories": 170,
+    "image": ["coffee_002_01"],
+    "nutritionFacts": {
+      "sodium": "110mg (6%)",
+      "carbohydrates": "24g (7%)",
+      "sugar": "20g (20%)",
+      "fat": "6g (11%)",
+      "transFat": "0g",
+      "saturatedFat": "3.2g (21%)",
+      "cholesterol": "20mg (7%)",
+      "protein": "5g (9%)"
+    },
+    "ingredients": [
+      "국산 원유",
+      "정제수",
+      "코스타리카 블렌드 에스프레소 커피 추출액",
+      "코스타리카산 50%",
+      "브라질산 30%",
+      "설탕",
+      "버터밀크파우더(호주산)",
+      "유크림",
+      "생초코릿",
+      "콜롬비아커피추출액 (콜롬비아산)",
+      "코코아파우더",
+      "향료 3종",
+      "탄산수소 나트륨",
+      "유화제",
+      "카라기난"
+    ]
+  },
+  {
+    "company": "매일유업",
+    "foodType": "커피",
+    "productName": "바리스타룰스 카라멜 딥 프레소",
+    "totalVolume": "250mL",
+    "calories": 161,
+    "image": ["coffee_003_01"],
+    "nutritionFacts": {
+      "sodium": "150mg (8%)",
+      "carbohydrates": "25g (8%)",
+      "sugar": "20g (21%)",
+      "fat": "5g (9%)",
+      "transFat": "0g",
+      "saturatedFat": "2.7g (18%)",
+      "cholesterol": "20mg (7%)",
+      "protein": "4g (7%)"
+    },
+    "ingredients": [
+      "국산 원유",
+      "정제수",
+      "코스타리카 블렌드 에스프레소 커피 추출액 (코스타리카산 50%, 브라질산 30%)",
+      "설탕",
+      "혼합탈지분유(네덜란드산)",
+      "유크림",
+      "콜롬비아커피추출액 (콜롬비아산)",
+      "다크생카라멜",
+      "향료 3종",
+      "탄산수소 나트륨",
+      "유화제",
+      "식염"
+    ]
+  },
+  {
+    "company": "매일유업",
+    "foodType": "커피",
+    "productName": "바리스타룰스 에스프레소 라떼",
+    "totalVolume": "250mL",
+    "calories": 162,
+    "image": ["coffee_004_01"],
+    "nutritionFacts": {
+      "sodium": "120mg (6%)",
+      "carbohydrates": "22g (7%)",
+      "sugar": "20g (20%)",
+      "fat": "6g (11%)",
+      "transFat": "0g",
+      "saturatedFat": "3.4g (23%)",
+      "cholesterol": "20mg (7%)",
+      "protein": "5g (9%)"
+    },
+    "ingredients": [
+      "국산 원유",
+      "가요마운틴 블렌드 에스프레소 커피 추출액(인도네시아산(가요마운틴, 만델링) 31%, 에티오피아산 30%)",
+      "정제수",
+      "설탕",
+      "콜롬비아 커피 추출액(콜롬비아산)",
+      "탄산수소 나트륨",
+      "향료 2종",
+      "유화제"
+    ]
+  },
+  {
+    "company": "매일유업",
+    "foodType": "커피",
+    "productName": "바리스타룰스 콜드브루 블랙",
+    "totalVolume": "325mL",
+    "calories": 10,
+    "image": ["coffee_005_01"],
+    "nutritionFacts": {
+      "sodium": "65mg (3%)",
+      "carbohydrates": "1.5g (0%)",
+      "sugar": "0g (0%)",
+      "fat": "0g (0%)",
+      "transFat": "0g",
+      "saturatedFat": "0g (0%)",
+      "cholesterol": "0mg (0%)",
+      "protein": "1g (1%)"
+    },
+    "ingredients": [
+      "정제수",
+      "코스타리카 원두 블렌드 커피 추출액(코스타리카산 100%)",
+      "탄산수소나트륨",
+      "비타민C"
+    ]
+  },
+  {
+    "company": "매일유업",
+    "foodType": "커피",
+    "productName": "바리스타룰스 바닐라빈 라떼",
+    "totalVolume": "325mL",
+    "calories": 210,
+    "image": ["coffee_006_01"],
+    "nutritionFacts": {
+      "sodium": "170mg (9%)",
+      "carbohydrates": "27.9g (8%)",
+      "sugar": "26g (26%)",
+      "fat": "8g (15%)",
+      "transFat": "0g",
+      "saturatedFat": "4.3g (29%)",
+      "cholesterol": "30mg (10%)",
+      "protein": "7g (13%)"
+    },
+    "ingredients": [
+      "국산 원유",
+      "정제수",
+      "엘살바도르 블렌드 워터그라인딩-플라넬드립 커피추출액",
+      "엘살바도르산 40%, 에티오피아산 40%",
+      "설탕",
+      "혼합탈지분유(네덜란드산)",
+      "유크림",
+      "향료[바닐라빈 추출물(독일산(바닐라빈:마다가스카르산))",
+      "탄산수소 나트륨",
+      "유화제",
+      "향료(바닐라향)"
+    ]
+  },
+  {
+    "company": "매일유업",
+    "foodType": "커피",
+    "productName": "바리스타룰스 돌체 라떼",
+    "totalVolume": "325mL",
+    "calories": 220,
+    "image": ["coffee_007_01"],
+    "nutritionFacts": {
+      "sodium": "210mg (11%)",
+      "carbohydrates": "31g (10%)",
+      "sugar": "31g (31%)",
+      "fat": "8g (15%)",
+      "transFat": "0.2g",
+      "saturatedFat": "5.5g (37%)",
+      "cholesterol": "24mg (8%)",
+      "protein": "6g (11%)"
+    },
+    "ingredients": [
+      "국산 원유",
+      "정제수",
+      "코스타리카 블렌드 커피 추출액(커피원두:코스타리카산)",
+      "정제수",
+      "설탕",
+      "에티오피아산 커피 추출액(커피원두:에티오피아산)",
+      "가당연유(원유:국산)",
+      "혼합탈지분유",
+      "유크림",
+      "산도조절제",
+      "유화제",
+      "향료 2종",
+      "식염",
+      "잔탄검",
+      "구연산",
+      "당시럽류"
+    ]
+  }
+]
