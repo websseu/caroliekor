@@ -4,7 +4,7 @@ import Header from "@/components/Header";
 import { Analytics } from "@vercel/analytics/react";
 
 export const metadata: Metadata = {
-  title: "칼로리 정보 허브",
+  title: "KALORIE : 칼로리 정보 허브",
   description: "다양한 음식과 음료의 칼로리 및 영양 정보를 제공합니다.",
   keywords: [
     "칼로리 정보",

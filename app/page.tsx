@@ -20,38 +20,8 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="mt-20 p-4">
-      <h1 className="text-8xl poppins font-bold">Coffee</h1>
-
+    <main className="max-w-screen-xl mx-auto mt-8 px-4">
       <div className="flex mt-8">
-        <aside className="aside">
-          <h2 className="border-b border-gray-400">
-            <span className="text-sm text-gray-600 poppins w200 line">
-              FILTERS
-            </span>
-          </h2>
-          <div className="filter">
-            <button className="flex items-center gap-2 mt-3 mb-2">
-              <MdOutlineKeyboardArrowDown className="text-gray-600" />
-              <span className="text-sm text-gray-700">Topic</span>
-            </button>
-            <ul>
-              <li className="pl-4 pb-1 text-xs">
-                <button className="flex items-center gap-2">
-                  <BiCheckbox size={14} />
-                  <span>Milk</span>
-                </button>
-              </li>
-              <li className="pl-4 text-xs">
-                <button className="flex items-center gap-2">
-                  <BiCheckboxChecked size={14} />
-                  <span>Coffee</span>
-                </button>
-              </li>
-            </ul>
-          </div>
-        </aside>
-
         <section className="list">
           <h2 className="border-b border-gray-400">
             <span className="text-sm mr-10 text-gray-600 poppins w200 line">
